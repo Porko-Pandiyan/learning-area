@@ -82,7 +82,7 @@
     guessField.value = '';
     guessField.focus();
   }
-  guessSubmit.addEventListener('click', checkGuess);
+  guessSubmit.addeventListener('click', checkGuess);
 
   function setGameOver() {
 	  guessField.disabled = true;
@@ -90,7 +90,7 @@
 	  resetButton = document.createElement('button');
 	  resetButton.textContent = 'Start new game';
 	  document.body.appendChild(resetButton);
-	  resetButton.addEventListener('click', resetGame);
+	  resetButton.addeventListener('click', resetGame);
   }
 
   function resetGame() {
@@ -113,6 +113,3 @@
   }
 </script>
 </html>
-
-<!-- This is what the fle was gonna belikex -->
-<!-- not sure -->
