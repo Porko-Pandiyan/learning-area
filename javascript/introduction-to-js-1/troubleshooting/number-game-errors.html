@@ -92,6 +92,7 @@
 	  document.body.appendChild(resetButton);
 	  resetButton.addEventListener('click', resetGame);
   }
+  <!-- made a few standard changes -->
 
   function resetGame() {
 	  guessCount = 1;
@@ -100,7 +101,7 @@
 	  for(let i = 0; i < resetParas.length; i++) {
 		  resetParas[i].textContent = '';
 	  }
-	  resetButton.parentNode.removeChild(resetButton);
+	  resetButton.parentNode.rm(resetButton);
 
 	  guessField.disabled = false;
 	  guessSubmit.disabled = false;
@@ -113,3 +114,4 @@
   }
 </script>
 </html>
+
